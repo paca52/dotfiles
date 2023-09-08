@@ -5,6 +5,16 @@ local plugins = {
 
   -- Override plugin definition options
   {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
+  },
+  {
     "tpope/vim-repeat",
     lazy = false
   },
